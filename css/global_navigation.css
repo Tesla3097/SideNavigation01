@@ -1,0 +1,103 @@
+@charset "UTF-8" ;
+
+/*----------------------------------------
+ global nav parent
+-----------------------------------------*/
+
+#global-nav ul {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	list-style: none;
+}
+
+#global-nav ul li {
+	position: relative;
+	width: 200px;
+	font-size: 14px;
+	text-align: center;
+	float: left;
+	border-right: #CCC solid 1px;
+	line-height: 2em;
+}
+
+#global-nav ul li a{
+	display: block;
+	cursor: auto;
+}
+
+#global-nav ul li a:hover{
+	background-color: #CCC;
+}
+
+#global-nav ul li:last-child {
+	border-right: none;
+}
+
+/*----------------------------------------
+ global nav children
+-----------------------------------------*/
+
+#global-nav ul li ul{
+	visibility: hidden;
+	position: absolute;
+  z-index: 9999;
+  top: 100%;
+  left: 0;
+}
+
+#global-nav ul li:hover ul li{
+	visibility: visible;
+	width: 400px;
+	text-align: left;
+	border-right: none;
+	background-color: #FFF;
+	animation: fadeIn 1s ease 0s 1 normal;
+}
+
+#global-nav ul li ul li a{
+	padding: 5px 10px;
+	line-height: 1.2em;
+}
+
+/*----------------------------------------
+ Toggle Button
+-----------------------------------------*/
+
+#nav-toggle {
+	position: absolute;
+	right: 12px;
+	top: 8px;
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	display: none;
+	cursor: pointer;
+	z-index: 101;
+	background-color: #5976BA;
+}
+
+#nav-toggle span {
+	position: absolute;
+	height: 3px;
+	left: 0;
+	width: 21px;
+	margin: 10px 8px;
+	display: block;
+	background: #FFF;
+	-webkit-transition: .35s ease-in-out;
+	-moz-transition: .35s ease-in-out;
+	transition: .35s ease-in-out;
+}
+
+#nav-toggle span:nth-child(1) {
+	top: 0;
+}
+
+#nav-toggle span:nth-child(2) {
+	top: 6px;
+}
+
+#nav-toggle span:nth-child(3) {
+	top: 12px;
+}

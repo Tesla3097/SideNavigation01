@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- ビューポートの設定 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <!-- スタイルシートの読み込み -->
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/layout.css" rel="stylesheet">
+  <link href="./css/contents.css" rel="stylesheet">
+  <link href="./css/global_navigation.css" rel="stylesheet">
+  <link href="./css/inview.css" rel="stylesheet">
+  <link href="./css/form.css" rel="stylesheet">
+	<link href="./css/responsive.css" rel="stylesheet">  
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/global_navigation.js"></script>
+  <script type="text/javascript" src="./js/inview.js"></script>
+  
+  <script type="text/javascript" src="./js/jquery.inview.js"></script>
+  
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ResponsiveIF</title>
+</head>
+
+<body>
+
+<header id="header">
+
+	<div class="inner">
+
+		<h1 class="logo">Logo</h1>
+      
+    <div id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+		<nav id="global-nav">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PRODUCT</a></li>
+        <li><a href="#">WORKS</a>
+        	<ul>
+          	<li><a href="#">WORKS</a></li>
+            <li><a href="#">WORKS</a></li>
+            <li><a href="#">WORKS</a></li>
+        	</ul>
+        </li>
+        <li><a href="#">COMPANY</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+
+  </div>
+  
+</header>
+
+<div id="wrapper">
+
+  <p>開発準備中</p>
+
+<div id="contents-menu">
+
+<ul class="cols-1">
+  <li><p>Contents menu01</p></li>
+</ul>
+<ul class="cols-2">
+  <li><p>Contents menu01</p></li>
+  <li><p>Contents menu02</p></li>
+</ul>
+<ul class="cols-3">
+  <li><p>Contents menu01</p></li>
+  <li><p>Contents menu02</p></li>
+  <li><p>Contents menu03</p></li>
+</ul>
+<ul class="cols-4">
+  <li><p>Contents menu01</p></li>
+  <li><p>Contents menu02</p></li>
+  <li><p>Contents menu03</p></li>
+  <li><p>Contents menu04</p></li>
+</ul>
+  
+</div><!-- /contents-menu -->
+
+<div id="contents">
+    
+<form class="form_style01">
+	
+<ul class="cols-2">
+  <li>
+  
+    <label>名前 <span class="required">*</span></label>
+    <input type="text" name="field1" class="field-divided" placeholder="姓（カタカナ表記）" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="名（カタカナ表記）" />
+    
+    <label>Full Name <span class="required">*</span></label>
+    <input type="text" name="field1" class="field-divided" placeholder="First Name（英語表記）" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last Name（英語表記）" />
+    
+    <label>出身国<span class="required">*</span></label>
+    <input type="text" name="field3" class="field-middle" />
+    
+    <label>年齢</label>
+    <input type="text" name="field3" class="field-short" />
+    
+    <label>メールアドレス <span class="required">*</span></label>
+    <input type="email" name="field3" class="field-long" />
+    
+    <label>日本での住所</label>
+    <input type="text" name="field3" class="field-short" placeholder="郵便番号" />
+    <input type="text" name="field3" class="field-long" placeholder="住所" />
+  
+  </li>
+    
+  <li>
+    
+    <label>質問（もしあれば何でもご自由にどうぞ）</label>
+    <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+
+    <label>Subject</label>
+    <select name="field4" class="field-select">
+    
+      <option value="Advertise">Advertise</option>
+      <option value="Partnership">Partnership</option>
+      <option value="General Question">General</option>
+   
+    </select>
+  
+  </li>
+</ul>
+  
+<ul class="cols-1">
+  <li>
+    <input type="submit" value="入力を確認する" />
+  </li>
+</ul>
+    
+</form>
+ 
+</div><!-- /contents -->
+
+<div class="table-scroll">
+
+<table>
+  <tr>
+    <th>項目1</th>
+    <th>項目2</th>
+    <th>項目3</th>
+    <th>項目4</th>
+    <th>項目5</th>
+    <th>項目6</th>
+    <th>項目7</th>
+    <th>項目8</th>
+    <th>項目9</th>
+    <th>項目10</th>
+  </tr>
+  <tr>
+    <td>内容1内容1</td>
+    <td>内容2内容2</td>
+    <td>内容3内容3</td>
+    <td>内容4内容4</td>
+    <td>内容5内容5</td>
+    <td>内容6内容6</td>
+    <td>内容7内容7</td>
+    <td>内容8内容8</td>
+    <td>内容9内容9</td>
+    <td>内容10内容10</td>
+  </tr>
+</table>
+
+</div><!-- /table-scroll -->
+
+</div><!-- /wrapper -->
+
+<div id="footer">
+
+<div class="inner">
+footer
+</div>
+
+</div><!-- /footer -->
+
+
+</body>
+</html>

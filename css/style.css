@@ -1,0 +1,39 @@
+@charset "UTF-8" ;
+
+* {
+  margin:0;
+  padding:0;
+  word-break: break-word;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+html {
+	width: 100%;	
+	min-height: 100%;
+	position: absolute;
+}
+
+body {
+	width: 100%;
+	margin-bottom: 2em;
+	font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+	line-height: 1.8em;
+	background-color: #F2F1F0;	
+}
+
+p {
+	padding: 10px 10px 0;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+
+

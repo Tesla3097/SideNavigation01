@@ -1,0 +1,240 @@
+@charset "UTF-8" ;
+
+@media screen and (max-width:750px) {
+
+/*----------------------------------------
+ wrapper
+-----------------------------------------*/
+
+	#wrapper {
+		width: 100%;
+		margin: 0 auto;	
+		padding: 0 10px;
+	}
+
+/*----------------------------------------
+ header
+-----------------------------------------*/
+	
+	#header, 
+	#header.fixed {
+		height: 50px;
+	}
+
+	#header .inner, 
+	#header.fixed .inner {
+		width: 100%;
+		height: 50px;
+	}
+	
+	#header .logo, 
+	#header.fixed .logo {
+		position: absolute;
+		left: 10px;
+		bottom: 10px;
+	}
+	
+	#header .title, 
+	#header.fixed .title {
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		font-size: 18px;
+	}
+	
+	#header .sub_title, 
+	#header.fixed .sub_title {
+		position: absolute;
+		left: 10px;
+		top: 30px;
+		font-size: 14px;
+	}
+	
+/*----------------------------------------
+ contents
+-----------------------------------------*/
+	
+	#contents .title{
+		font-size: 21px;
+		padding: 3px 0  0 5px;
+	}
+	
+	#contents .sub_title{
+		font-size: 18px;
+		margin: 20px 0 0;
+	}
+		
+	#contents-top {
+		width: 100%;
+		height: 100%;
+	}
+	
+	#contents-top .title{
+		font-size: 24px;
+		text-align: center;
+		padding: 0;
+	}
+	
+	#contents-top .sub_title{
+		font-size: 16px;
+		text-align: center;
+	}
+
+/*----------------------------------------
+ footer
+-----------------------------------------*/
+	
+	#footer .inner {
+		width: 100%;
+		margin: 0 auto;
+		font-size: 10px;
+		text-align: center;
+	}
+	
+/*----------------------------------------
+ global nav parent
+-----------------------------------------*/
+	
+	#global-nav {
+		position: absolute;
+		top: 50px;
+		width: 100%;
+		left: -1000px;
+	}
+	
+	#global-nav ul {
+		position: static;
+		width: 150px;
+		background: #333;
+		opacity: 0.9;
+		-webkit-opacity: 0.9;
+		-moz-opacity: 0.9;
+		filter:alpha(opacity=90);	
+	}
+	
+	#global-nav ul li {
+		width: 100%;
+		float: none;
+		border-right: none;
+		border-top: #CCC solid 1px;
+	}
+	
+	#global-nav ul li a {
+		padding: 5px 10px;
+		font-size: 16px;
+		text-align: left;
+		color: #FFF;
+	}
+	
+	#global-nav ul li a:hover{
+		background-color: #CCC;
+		color: #333;
+	}
+	
+/*----------------------------------------
+ global nav children
+-----------------------------------------*/
+	
+	#global-nav ul li ul li {
+		
+		margin: 0 0 0 50px;
+		border-right: none;
+		border-left: #CCC solid 1px;
+	}
+	
+	#global-nav ul li ul li a {
+		width: 100%;
+		padding: 5px 10px;
+		background: #333;
+	}
+	
+/*----------------------------------------
+ global toggle
+-----------------------------------------*/	
+
+	#nav-toggle {
+		display: block;
+	}
+	.open #nav-toggle span:nth-child(1) {
+		top: 7px;
+		-webkit-transform: rotate(315deg);
+		-moz-transform: rotate(315deg);
+		transform: rotate(315deg);
+	}
+	.open #nav-toggle span:nth-child(2) {
+		width: 0;
+		left: 50%;
+	}
+	.open #nav-toggle span:nth-child(3) {
+		top: 7px;
+		-webkit-transform: rotate(-315deg);
+		-moz-transform: rotate(-315deg);
+		transform: rotate(-315deg);
+	}
+	
+	.open #global-nav {
+		-moz-transform: translateX(1000px);
+		-webkit-transform: translateX(1000px);
+		transform: translateX(1000px);
+	}
+
+	#contents-menu ul.cols-2 li, 
+	#contents-menu ul.cols-3 li, 
+	#contents-menu ul.cols-4 li {
+		width: 100%;
+		transition:none;
+	}
+	
+	#contents ul.cols-2 li ,#contents-menu ul.cols-3 li ,#contents-menu ul.cols-4 li {
+		width: 100%;
+		transition:none;
+	}
+
+/* ====================================================
+ form
+==================================================== */
+
+	.form_style01 input[type=text], 
+	.form_style01 input[type=date],
+	.form_style01 input[type=datetime],
+	.form_style01 input[type=number],
+	.form_style01 input[type=search],
+	.form_style01 input[type=time],
+	.form_style01 input[type=url],
+	.form_style01 input[type=email],
+	textarea, 
+	select{
+		-webkit-appearance: none;
+		font-size: 16px;
+		transform: scale(1);
+	}
+	
+	.form_style01 input[type=submit], 
+	.form_style01 input[type=button]{
+		width: 100%;
+		padding: 10px 0;
+		font-size: 16px;
+		-webkit-appearance: none;
+		border-radius: 5px;
+		-webkit-border-radius: 5px; /* Safari,Google Chrome用 */  
+		-moz-border-radius: 5px; /* Firefox用 */
+	}
+	
+
+
+}
+
+/* スマホ */
+@media screen and (max-width:718px) {
+	
+	ul[class*='cols-'] > li{
+      width: 100%;/*すべてを１列に*/
+  }
+	
+}
+
+
+
+
+
+

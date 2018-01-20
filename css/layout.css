@@ -1,0 +1,139 @@
+@charset "UTF-8" ;
+
+/*----------------------------------------
+ header
+-----------------------------------------*/
+
+#header {
+	width: 100%;
+	height: 80px;
+	background-color: #FBFBFB;
+	border-bottom: #5976BA solid 1px;
+}
+
+#header a {
+	color: #000;
+	text-decoration: none;
+}
+
+#header .logo {
+	position: absolute;
+	left: 0;
+	top: 5px;
+	float: left;
+}
+
+#header .title {
+	position: absolute;
+	left: 0;
+	top: 25px;
+	font-size: 24px;
+	line-height: 1;
+}
+
+#header .sub_title {
+	position: absolute;
+	left: 0;
+	top: 50px;
+	font-size: 12px;
+	line-height: 1;
+}
+
+/*----------------------------------------
+ header inner
+-----------------------------------------*/
+
+#header .inner {
+	position: relative;	
+	width: 1024px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#header .inner:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/*----------------------------------------
+ header fixed
+-----------------------------------------*/
+
+#header.fixed {
+	position: fixed;
+	height: 40px;
+	top: 0;
+	animation: fadeIn 2s ease 0s 1 normal;
+	z-index: 1;
+}
+
+#header.fixed .logo {
+	font-size: 24px;
+}
+
+#header.fixed .title {
+	font-size: 18px;
+	top: 5px;
+}
+
+#header.fixed .sub_title {
+	font-size: 12px;
+	top: 25px;
+}
+
+/*----------------------------------------
+ wrapper
+-----------------------------------------*/
+
+#wrapper {
+	width:1024px;
+	margin: 0 auto;
+}
+
+/*----------------------------------------
+ contents
+-----------------------------------------*/
+
+#contents {
+	margin: 20px 0;
+	padding: 0 0 20px;
+}
+
+#contents-top {
+	width: 100%;
+	height: 350px;
+	margin: 20px 0;
+}
+
+#contents-menu {
+	margin: 20px 0;
+}
+
+/*----------------------------------------
+ footer
+-----------------------------------------*/
+
+#footer {
+	position: absolute;
+	width: 100%;
+	height: 2em;
+	bottom: 0px;
+	background-color: #FBFBFB;
+	border-top: #5976BA solid 1px;
+}
+
+#footer .inner {
+	width: 1024px;
+	margin: 0 auto;
+	font-size: 10px;
+	text-align: center;
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+
+
