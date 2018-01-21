@@ -2,25 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<!-- ビューポートの設定1 -->
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-  
-  <!-- スタイルシートの読み込み -->
-  <link href="./css/style.css" rel="stylesheet">
-  <link href="./css/layout.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <link href="./css/side_navigation.css" rel="stylesheet">
+<!-- スタイルシートの読み込み -->
+<link href="./css/style.css" rel="stylesheet">
+<link href="./css/layout.css" rel="stylesheet">
+<link href="./css/side_navigation.css" rel="stylesheet">
+<link href="./css/responsive.css" rel="stylesheet">  
 
-	<link href="./css/responsive.css" rel="stylesheet">  
-  
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  
-  <script type="text/javascript" src="./js/global_navigation.js"></script>
-  <script type="text/javascript" src="./js/inview.js"></script>
-  
-  <script type="text/javascript" src="./js/jquery.inview.js"></script>
-  
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>ResponsiveIF</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script type="text/javascript" src="./js/global_navigation.js"></script>
+<script type="text/javascript" src="./js/inview.js"></script>
+
+<script type="text/javascript" src="./js/jquery.inview.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SideNavigation01</title>
 </head>
 
 <body>
@@ -28,30 +26,13 @@
 <header id="header">
 
 	<div class="inner">
-
-		<h1 class="logo">Logo</h1>
-      
-    <div id="nav-toggle">
+    
+    <div id="toggle-menu">
       <span></span>
       <span></span>
       <span></span>
+      <p>メニュー</p>
     </div>
-
-		<nav id="global-nav">
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">PRODUCT</a></li>
-        <li><a href="#">WORKS</a>
-        	<ul>
-          	<li><a href="#">WORKS</a></li>
-            <li><a href="#">WORKS</a></li>
-            <li><a href="#">WORKS</a></li>
-        	</ul>
-        </li>
-        <li><a href="#">COMPANY</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
-    </nav>
 
   </div>
   
@@ -59,14 +40,76 @@
 
 <div id="wrapper">
 
+<div id="SideNavigation">
 
+<ul id="menu">
 
+  <li><a href="#">Home</a></li>
+  
+  <li><a href="#">Strategy</a>
+    <!-- child -->
+    <ul>
+      <li><a href="#">b1</a></li>
+      <li><a href="#">b1</a>
+        <!-- grand child -->
+        <ul>
+          <li><a href="#">b2</a></li>
+          <li><a href="#">b2</a></li>
+				</ul>
+        <!-- /grand child -->
+			</li>
+		</ul>
+    <!-- /child -->
+	</li>
+  
+	<li><a href="#">About</a>
+    <!-- child -->
+    <ul>
+      <li><a href="#">c1</a></li>
+      <li><a href="#">c1</a></li>
+    </ul>
+    <!-- /child -->
+	</li>
+  
+	<li><a href="#">Works</a>
+    <!-- child -->
+    <ul>
+      <li><a href="#">d1</a></li>
+      <li><a href="#">d1</a>
+        <!-- grand child -->
+        <ul>
+          <li><a href="#">d2</a></li>
+          <li><a href="#">d2</a></li>
+        </ul>
+        <!-- /grand child -->
+			</li>
+		</ul>
+    <!-- /child -->
+	</li>
+  
+	<li><a href="#">Contact</a>
+    <!-- child -->
+    <ul>
+      <li><a href="#">e1</a></li>
+      <li><a href="#">e1</a>
+        <!-- grand child -->
+        <ul>
+          <li><a href="#">e2</a></li>
+          <li><a href="#">e2</a></li>
+        </ul>
+        <!-- /grand child -->
+			</li>
+		</ul>
+    <!-- /child -->
+	</li>
+</ul>
 
-<div id="contents">
-    
+</div>
 
- 
-</div><!-- /contents -->
+<div class="content">
+<p>通常の縦並びドロップダウンメニューです。メニュー部分にマウスオーバーするとコンテンツの上に子メニューが展開します。</p>
+<p>子孫メニューの制御ははoverflowで行っております。displayでの制御も可能ですが、その場合はcontentプロパティで表示している▶矢印は見えなくなります。</p>
+</div>
 
 
 

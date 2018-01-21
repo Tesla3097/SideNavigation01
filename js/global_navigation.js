@@ -15,9 +15,12 @@ $(function() {
 		
 	});
 	
-	$('#nav-toggle').click(function(){
+	var $wrapper = $('#wrapper');
+	
+	$('#toggle-menu').click(function(){
 		
 		$header.toggleClass('open');
+		$wrapper.toggleClass('open');
 	
 	});
 	
