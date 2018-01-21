@@ -77,19 +77,16 @@
   padding: 0;
   box-sizing: border-box;
 	transition: 0.3s;
-	
 	opacity: 0.9;
 	-webkit-opacity: 0.9;
 	-moz-opacity: 0.9;
 	filter:alpha(opacity=90);	
-	
 }
 
 .open #SideNavigation {
 	-moz-transform: translateX(1000px);
 	-webkit-transform: translateX(1000px);
 	transform: translateX(1000px);
-	
 	animation: fadeIn 2s ease 0s 1 normal;
   -webkit-animation: fadeIn 2s ease 0s 1 normal;
 }
@@ -133,8 +130,6 @@
   box-sizing: border-box;
   text-decoration: none;
   transition: 0.5s;
-	
-	
 }
 
 #menu li a:hover {

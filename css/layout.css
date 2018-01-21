@@ -29,32 +29,6 @@
 }
 
 /*----------------------------------------
- header fixed
------------------------------------------*/
-
-#header.fixed {
-	position: fixed;
-	height: 40px;
-	top: 0;
-	animation: fadeIn 2s ease 0s 1 normal;
-	z-index: 1;
-}
-
-#header.fixed .logo {
-	font-size: 24px;
-}
-
-#header.fixed .title {
-	font-size: 18px;
-	top: 5px;
-}
-
-#header.fixed .sub_title {
-	font-size: 12px;
-	top: 25px;
-}
-
-/*----------------------------------------
  wrapper
 -----------------------------------------*/
 
@@ -63,17 +37,6 @@
 	width:1024px;
 	margin: 0 auto;
 }
-
-/*----------------------------------------
- contents
-
-
-#contents {
-	margin: 20px 0;
-	padding: 0 0 20px;
-}
-
------------------------------------------*/
 
 /*----------------------------------------
  footer
