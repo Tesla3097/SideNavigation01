@@ -73,9 +73,8 @@
   overflow: auto;
   width: 100%;
 	min-height: 100%;
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
+
+
 	transition: 0.3s;
 	opacity: 0.9;
 	-webkit-opacity: 0.9;
@@ -90,6 +89,10 @@
 	animation: fadeIn 2s ease 0s 1 normal;
   -webkit-animation: fadeIn 2s ease 0s 1 normal;
 }
+
+/*----------------------------------------
+ menu
+-----------------------------------------*/
 
 #menu {
   width: 150px;

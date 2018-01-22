@@ -15,16 +15,10 @@
 /*----------------------------------------
  header
 -----------------------------------------*/
-	
-	#header, 
-	#header.fixed {
-		height: 50px;
-	}
 
-	#header .inner, 
-	#header.fixed .inner {
+	#header .inner{
 		width: 100%;
-		height: 50px;
+		height: 60px;
 	}
 
 /*----------------------------------------
